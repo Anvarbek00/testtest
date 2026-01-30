@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenshop - Plant Care</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">◎</span>
+        <span class="logo-text">GREENSHOP</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-link" data-section="home">Home</button>
+        <button class="nav-link" data-section="shop">Shop</button>
+        <button class="nav-link active" data-section="plant-care">Plant Care</button>
+        <button class="nav-link" data-section="blogs">Blogs</button>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Search">
+          <span>🔍</span>
+        </button>
+        <button class="icon-button" aria-label="Cart">
+          <span>🛒</span>
+        </button>
+        <button class="login-button">Login</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="placeholder" id="home" data-section-panel hidden>
+        <h2>Home</h2>
+        <p>Welcome to the Greenshop homepage.</p>
+      </section>
+      <section class="placeholder" id="shop" data-section-panel hidden>
+        <h2>Shop</h2>
+        <p>Browse plants, pots, and accessories.</p>
+      </section>
+      <section class="hero" id="plant-care" data-section-panel>
+        <div class="hero-content">
+          <p class="eyebrow">Educational resource</p>
+          <h1>
+            <span>Plant Care</span>
+            <span class="accent">Guides</span>
+          </h1>
+          <p class="subtitle">
+            Become the ultimate plant parent with our expert-backed care guides. We make sure your
+            green friends thrive in every environment.
+          </p>
+          <form class="search-form" aria-label="Plant search">
+            <input type="text" placeholder="Search for your plant..." />
+            <button type="submit">Search</button>
+          </form>
+          <p class="tip">
+            <span>💡</span>
+            Tip: Most indoor plants die from overwatering, not under-watering.
+          </p>
+        </div>
+        <div class="hero-image">
+          <div class="image-frame">
+            <img
+              id="hero-preview"
+              src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=900&q=80"
+              alt="A collection of indoor plants"
+            />
+            <label class="image-upload">
+              <input type="file" accept="image/*" data-preview="hero-preview" />
+              <span>Rasm yuklash</span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="placeholder" id="blogs" data-section-panel hidden>
+        <h2>Blogs</h2>
+        <p>Read the latest tips from our plant experts.</p>
+      </section>
+
+      <section class="cards">
+        <div class="cards-header">
+          <div>
+            <h2>Care Cards by Category</h2>
+            <p>Quick guides for every type of indoor companion.</p>
+          </div>
+          <div class="category-tabs">
+            <button class="tab active">All Types</button>
+            <button class="tab">House Plants</button>
+            <button class="tab">Succulents</button>
+            <button class="tab">Seeds</button>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-tag">Succulents</div>
+            <div class="card-image">
+              <img
+                id="card-succulent"
+                src="https://images.unsplash.com/photo-1459664018906-085c36f472af?auto=format&fit=crop&w=700&q=80"
+                alt="Succulent plant"
+              />
+              <label class="image-upload small">
+                <input type="file" accept="image/*" data-preview="card-succulent" />
+                <span>Rasm</span>
+              </label>
+            </div>
+            <h3>The Resilient Succulent</h3>
+            <div class="card-meta">
+              <span>☀️ Bright Direct</span>
+              <span>💧 Every 3 wks</span>
+              <span>🌡️ 18-28°C</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-tag">House Plants</div>
+            <div class="card-image">
+              <img
+                id="card-house"
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80"
+                alt="House plant"
+              />
+              <label class="image-upload small">
+                <input type="file" accept="image/*" data-preview="card-house" />
+                <span>Rasm</span>
+              </label>
+            </div>
+            <h3>Monstera Deliciosa</h3>
+            <div class="card-meta">
+              <span>☁️ Indirect</span>
+              <span>💧 Weekly</span>
+              <span>🌡️ 15-24°C</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-tag">Seeds</div>
+            <div class="card-image">
+              <img
+                id="card-seeds"
+                src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=700&q=80"
+                alt="Seedlings"
+              />
+              <label class="image-upload small">
+                <input type="file" accept="image/*" data-preview="card-seeds" />
+                <span>Rasm</span>
+              </label>
+            </div>
+            <h3>Herb Garden Kit</h3>
+            <div class="card-meta">
+              <span>☀️ Full Sun</span>
+              <span>💧 Daily Mist</span>
+              <span>🌡️ 20-25°C</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
